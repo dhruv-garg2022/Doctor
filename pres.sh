@@ -1,8 +1,5 @@
 #!/bin/bash
 #after login
-echo "Username"
-read username
-
 echo "Add Symptoms"
 read sym
 
@@ -15,4 +12,4 @@ read pres
 echo "Add Tests"
 read test
 
-echo -e "Date: `date`\nSymptoms: $sym\nDiagnostics: $dia\nPrescription: $pres\nTest: $test\n" >> patients/$username.txt
+echo -e "Date: `date`\nSymptoms: $sym\nDiagnostics: $dia\nPrescription: $pres\nTest: $test\n" >> patients/$1.txt
