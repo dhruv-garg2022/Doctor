@@ -1,6 +1,6 @@
 #!/bin/bash
 #after login
-echo "Enter username"
+echo "Username"
 read username
 
 echo "Add Symptoms"
@@ -16,4 +16,3 @@ echo "Add Tests"
 read test
 
 echo -e "Date: `date`\nSymptoms: $sym\nDiagnostics: $dia\nPrescription: $pres\nTest: $test\n" >> patients/$username.txt
-

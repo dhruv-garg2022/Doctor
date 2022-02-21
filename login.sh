@@ -17,6 +17,7 @@ if [[ ( `grep -w -c "$c" user.txt` -eq 1 ) ]];
 then
 echo -e "login successful\n"
 check=false
+bash pres.sh
 else
 echo -e "Invalid Username or Password\n"
 fi
