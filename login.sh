@@ -36,18 +36,23 @@ fi
 done
 echo "Enter password"
 read password
-
 echo -e "$username $password" >> user.txt
 check=false
 echo -e "Successfully Registered\n"
 echo "Welcome $username to World's Future" > patients/$username.txt
 }
 
+UploadGit() {
+`git add .`
+`git commit -m "Update"`
+git push
+}
+
 echo "Welcome to World's future"
 check=true
 while [ check ]
 do
-echo -e "Press 1: Login\nPress 2:Signup\nPress any key for exit"
+echo -e "Press 1: Login\nPress 2: Signup\nPress any key for exit\nPress 3: To upload on Github"
 read num
 case $num in
 1)
@@ -58,6 +63,8 @@ Signup
 echo ""
 Login
 ;;
+3)
+UploadGit;;
 *)
 break;;
 esac
