@@ -40,7 +40,7 @@ read password
 echo -e "$username $password" >> user.txt
 check=false
 echo -e "Successfully Registered\n"
-touch patients/$username.txt
+echo "Welcome $username to World's Future" > patients/$username.txt
 }
 
 echo "Welcome to World's future"
